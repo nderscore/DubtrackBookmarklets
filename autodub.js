@@ -19,7 +19,6 @@
     }
 
     var $chatmain = $('.chat-main');
-    var $msgs = $('.chat-messages');
 
     // toggle
     if(window._autodub == 'on'){
@@ -32,5 +31,5 @@
         $('.dubup').trigger('click');
     }
 
-    $msgs.scrollTop($msgs.scrollTop() + 100);
+    Dubtrack.room.chat.scollBottomChat();
 }();
