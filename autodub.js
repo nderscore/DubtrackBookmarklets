@@ -24,12 +24,16 @@
     if(window._autodub == 'on'){
         window._autodub = 'off';
         window._autodubdownvote = true;
-        $chatmain.append('<li>_nderscore\'s autodub disabled!</li>');
+        $chatmain.append('<li class="_autodub">_nderscore\'s autodub disabled!</li>');
     } else {
         window._autodub = 'on';
-        $chatmain.append('<li>_nderscore\'s autodub enabled!</li>');
+        $chatmain.append('<li class="_autodub">_nderscore\'s autodub enabled!</li>');
         $('.dubup').trigger('click');
     }
 
     Dubtrack.room.chat.scollBottomChat();
+
+    setTimeout(function(){ 
+        $('._autodub').remove(); 
+    }, 3e3);
 }();
