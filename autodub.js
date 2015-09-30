@@ -18,14 +18,19 @@
         });
     }
 
+    var $chatmain = $('.chat-main');
+    var $msgs = $('.chat-messages');
+
     // toggle
     if(window._autodub == 'on'){
         window._autodub = 'off';
         window._autodubdownvote = true;
-        $('.chat-main').append('<li>_nderscore\'s autodub disabled!</li>');
+        $chatmain.append('<li>_nderscore\'s autodub disabled!</li>');
     } else {
         window._autodub = 'on';
-        $('.chat-main').append('<li>_nderscore\'s autodub enabled!</li>');
+        $chatmain.append('<li>_nderscore\'s autodub enabled!</li>');
         $('.dubup').trigger('click');
     }
+
+    $msgs.scrollTop($msgs.scrollTop() + 100);
 }();
