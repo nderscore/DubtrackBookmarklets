@@ -16,6 +16,8 @@ Run this bookmark while on any youtube playlist page. It will generate a list of
 
 # Youtube Playlist Importer
 
-Run this bookmark while on any dubtrack playlist page. Paste in your list of youtube video ID's and it will add them all to your Dubtrack playlist. It takes a while, so be patient :)
+Run this bookmark while on any dubtrack playlist page. You should be on a page with the message "PRIVATE your playlist is only viewable by you" in red. 
+
+Paste in your list of youtube video ID's and it will add them all to your Dubtrack playlist. It takes a while, so be patient :)
 
     javascript:~function(){$.getScript('//cdn.rawgit.com/nderscore/DubtrackBookmarklets/master/nderImport.js')}();
