@@ -12,7 +12,7 @@ Automatically upvotes tracks 30-60 seconds after they play on a randomized timer
 
 Run this bookmark while on any youtube playlist page. It will generate a list of video ID's for use with the importer.
 
-    javascript:~function(){$.getScript('//cdn.rawgit.com/nderscore/DubtrackBookmarklets/master/nderExport.js')}();
+    javascript:~function(){var s = document.createElement('script'); s.src = '//cdn.rawgit.com/nderscore/DubtrackBookmarklets/master/nderExport.js'; document.head.appendChild(s); }();
 
 # Youtube Playlist Importer
 
